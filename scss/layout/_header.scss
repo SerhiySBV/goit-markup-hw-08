@@ -1,0 +1,62 @@
+.header {
+  background-color: var(--main-white);
+  border-bottom: 1px solid #ececec;
+
+  &-conteiner {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__phone-icon,
+  &__mail-icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+/* Logo */
+
+.header-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+
+  margin-right: 93px;
+  color: var(--accent-txt-cl);
+}
+
+.header-logo__cl {
+  color: #000000;
+}
+
+.header__link {
+  color: var(--main-txt-cl);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  transition: color $animation;
+
+  &--phone,
+  &--letter {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}

@@ -1,0 +1,88 @@
+.teem {
+  background: #f5f4fa;
+  padding: 94px 0;
+
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+  &-link {
+    background-color: var(--main-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &-img {
+    text-align: center;
+  }
+}
+
+/* Block decoration */
+
+.social {
+  padding: 30px 10px;
+
+  &-item {
+    border-radius: 50%;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-white);
+  color: var(--icons-color);
+  border-radius: 50%;
+  transition: background-color $animation, color $animation;
+
+  &:focus,
+  &:hover {
+    border-radius: 50%;
+    background-color: var(--accent-txt-cl);
+    color: var(--main-white);
+  }
+}

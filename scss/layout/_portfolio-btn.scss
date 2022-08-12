@@ -1,0 +1,10 @@
+.portfolio-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+  &-current {
+    background-color: #2196f3;
+    color: var(--main-white);
+  }
+}

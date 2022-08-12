@@ -1,0 +1,220 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: var(--main-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: var(--main-white);
+  transition: background-color $animation;
+  transition: transform $animation;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1003;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
+
+.form-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  cursor: pointer;
+  transition: border $animation;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+}
+.form-btn-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+
+  transition: $animation;
+}
+.form-btn__close {
+  transition: fill $animation;
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $animation, visibility $animation;
+  z-index: 1002;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity $animation, visibility $animation;
+  }
+}
+
+//  Form
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15em;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    padding-top: 40px;
+    margin-bottom: 12px;
+  }
+  &__text {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    line-height: 1.17em;
+
+    letter-spacing: 0.01em;
+
+    color: var(--main-txt-cl);
+  }
+  &__input {
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 42px;
+    transition: border $animation;
+  }
+}
+.form__input:hover + .form-btn-icon,
+.form__input:focus + .form-btn-icon {
+  fill: var(--accent-txt-cl);
+}
+.form__input:hover,
+.form__input:focus {
+  border-color: var(--accent-txt-cl);
+  outline-color: var(--accent-txt-cl);
+}
+
+.form__input--coment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transition: border $animation;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-txt-cl);
+    outline-color: var(--accent-txt-cl);
+  }
+
+  &--coment::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: background-image $animation;
+    width: 425px;
+    height: 24px;
+  }
+  &__text--link {
+    color: var(--accent-txt-cl);
+    margin-left: 4px;
+    text-decoration: underline;
+  }
+  &__input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    margin-right: 8px;
+  }
+  &__text,
+  &__text--link {
+    font-size: 14px;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+  }
+}
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--dark-bg-cl);
+  border-radius: 2px;
+  transition: $animation;
+  .checkbox__input:checked + & {
+    background-color: var(--accent-txt-cl);
+    background-image: url(../images/icons/form-icons/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    background-origin: border-box;
+    transform: background-color $animation;
+    transform: background-image $animation;
+    border-color: transparent;
+  }
+  .checkbox__input:hover + &,
+  .checkbox__input:focus + & {
+    border: 2px solid var(--accent-txt-cl);
+    border-radius: 2px;
+    transform: border-color $animation;
+  }
+}
