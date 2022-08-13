@@ -1,7 +1,15 @@
 .about {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__title {
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14em;
@@ -20,15 +28,37 @@
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__item {
-    width: 270px;
+    width: 100%;
+    padding-bottom: 30px;
+
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      padding-bottom: 57px;
+    }
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item::before {
+    // display: none;
+
     display: block;
     content: '';
     height: 120px;
