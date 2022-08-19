@@ -1,4 +1,11 @@
 .specification {
+   
+  display: none;
+
+//   breakpoint  1200px for descktop screen
+@media screen and (min-width: 1200px) {
+  display: block;
+
   padding-bottom: 94px;
 
   &-title {
@@ -39,4 +46,8 @@
     left: 0;
     bottom: 0;
   }
+
+  
+}
+
 }

@@ -5,17 +5,75 @@
   &-conteiner {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      display: block;
+      align-items: center;
+    }
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__phone-icon,
   &__mail-icon {
     fill: currentColor;
-    margin-right: 10px;
+   
+  }
+  &__phone-icon {
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 14px; margin-right: 10px;
+    }
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      width: 12px;
+      height: 16px; margin-right: 10px;
+    }
+  }
+  &__mail-icon {
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 10px; margin-right: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 10px; margin-right: 10px;
+    }
+  }
+  &__mail {
+    //   breakpoint  768px for tablet screen
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+    //   breakpoint  1200px for descktop screen
+  }
+}
+.menu-btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+
+  position: fixed;
+  top: 10px;
+  right: 15px;
+
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -25,14 +83,27 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 1.117em;
   letter-spacing: 0.03em;
 
   color: #2196f3;
 
-  margin-right: 93px;
   color: var(--accent-txt-cl);
+
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 87px;
+  }
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+    font-size: 26px;
+    line-height: 1.19em;
+  }
 }
 
 .header-logo__cl {
@@ -42,21 +113,41 @@
 .header__link {
   color: var(--main-txt-cl);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
   letter-spacing: 0.02em;
-  padding: 32px 0;
   transition: color $animation;
+
+  &--letter {
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
 
   &--phone,
   &--letter {
     display: flex;
     align-items: center;
-    margin-right: 30px;
-  }
 
-  &:hover,
-  &:focus {
-    color: var(--accent-txt-cl);
+    //   breakpoint  768px for tablet screen
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17em;
+
+      &:focus {
+        color: var(--accent-txt-cl);
+      }
+    }
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14em;
+      padding: 32px 0;
+
+      &:hover,
+      &:focus {
+        color: var(--accent-txt-cl);
+      }
+    }
   }
 }
