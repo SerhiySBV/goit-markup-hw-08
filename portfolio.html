@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо</title>
+   
     <!-- Fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Font end -->
     <link rel="stylesheet" href="./css/main.min.css" />
-     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+     <!-- <link rel="stylesheet" href="./css/styles.css" /> --> <title>Портфоліо</title>
   </head>
+
   <body>
     <!--Header-->
 
@@ -28,7 +32,7 @@
         <a class="link header-logo" lang="en" href="./index.html"
           >Web<span class="header-logo__cl">Studio</span></a
         >
-        <nav class="nav">
+              <nav class="nav">
           <ul class="list nav__list">
             <li><a class="link nav__link" href="./index.html">Студія</a></li>
             <li class="nav-curent">
@@ -37,21 +41,29 @@
             <li><a class="link nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
+
+         <button class="menu-btn" type="button">
+          <svg width="40" height="40" class="header__btn-icon">
+            <use href="./images/icons.svg#menu-btn"></use>
+          </svg>
+        </button>
+
         <ul class="list header__list">
           <li>
             <a
               class="link header__link header__link--letter"
               lang="en"
               href="mailto:info@devstudio.com"
-              ><svg width="16" height="12" class="header__mail-icon">
+              ><svg class="header__mail-icon">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com            
+                   
+                </a>
           </li>
           <li>
             <a class="link header__link header__link--phone" href="tel:+380961111111">
-              <svg width="10" height="16" class="header__phone-icon">
+              <svg class="header__phone-icon">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 099 111 11 11</a
             >
