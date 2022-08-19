@@ -3,12 +3,37 @@
   padding: 60px 0;
 
   &-block {
-    display: flex;
-    align-items: baseline;
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      
+    }
   }
 
   &-info {
-    margin-right: 70px;
+    text-align: center;
+
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+      margin-left: 76px;
+      text-align: unset;
+    }
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-left: 0;
+      text-align: unset;
+    }
   }
 
   &-text {
@@ -18,8 +43,11 @@
     letter-spacing: 0.03em;
 
     color: #ffffff;
-
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &-tel:hover,
@@ -29,7 +57,15 @@
 }
 
 .footer-conect {
-  margin-right: 93px;
+  //   breakpoint  480px for mobile screen
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &-list {
     display: flex;
@@ -46,6 +82,8 @@
 
     color: #ffffff;
     margin-bottom: 20px;
+
+    text-align: center;
   }
 }
 
@@ -62,7 +100,12 @@
 
 .footer-link {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 
   &-icon {
     display: flex;
@@ -92,14 +135,20 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.14em;
+  font-size: 24px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
 
   color: #2196f3;
 
   display: block;
   margin-bottom: 20px;
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.14em;
+  }
 
   &-cl {
     font-family: 'Raleway';

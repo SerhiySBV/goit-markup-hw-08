@@ -1,7 +1,24 @@
 .subscribe {
-  position: relative;
-  width: 570px;
-  height: 86px;
+  padding-top: 0;
+
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    text-align: center;
+    width: 450px;
+
+    margin: 0 auto;
+  }
+ 
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: 570px;
+    height: 86px;
+
+    padding-top: 0;
+    text-align:start;
+  }
 
   &__title {
     display: block;
@@ -13,13 +30,25 @@
 
     color: var(--main-white);
     margin-bottom: 20px;
+
+    //   breakpoint  480px for mobile screen
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__input {
-    width: 358px;
     height: 50px;
     padding: 16px 15px;
-    margin-right: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+
+      margin-right: 12px;
+    }
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -44,23 +73,34 @@
   }
 
   &-btn__txt {
-    position: absolute;
-    top: 10px;
-    left: 28px;
+    margin-right: 12px;
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 10px;
+      left: 28px;
+    }
   }
 
   &-btn__icon {
-    position: absolute;
-    align-items: center;
-    top: 13px;
-    right: 28px;
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      align-items: center;
+      top: 13px;
+      right: 28px;
+    }
   }
 }
 
 .btn-mode-blue__subscribe {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  bottom: 0;
-  right: 0;
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+  }
 }
