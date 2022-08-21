@@ -44,7 +44,8 @@
         </nav>
 
         <button
-          class="menu-btn js-open-menu"
+          class="menu-btn"
+          data-menu-open
           aria-expanded="false"
           aria-controls="menu-conteiner"
           type="button"
@@ -83,9 +84,9 @@
     <main>
       <!-- Mobile menu -->
 
-      <div class="menu-overlay">
-        <div class="menu-conteiner js-menu-container" id="menu-conteiner">
-          <button class="menu-btn js-close-menu" type="button">
+      <div class="menu-overlay" data-menu>
+        <div class="menu-conteiner">
+          <button class="menu-btn" type="button" data-menu-close>
             <svg class="menu-btn__close" width="40" height="40">
               <use class="menu-btn__icon" href="./images/icons.svg#mobile_close"></use>
             </svg>
