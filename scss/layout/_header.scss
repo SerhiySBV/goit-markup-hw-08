@@ -27,53 +27,44 @@
   &__phone-icon,
   &__mail-icon {
     fill: currentColor;
-   
   }
   &__phone-icon {
     //   breakpoint  768px for tablet screen
     @media screen and (min-width: 768px) {
       width: 10px;
-      height: 14px; margin-right: 10px;
+      height: 14px;
+      margin-right: 10px;
     }
     //   breakpoint  1200px for descktop screen
     @media screen and (min-width: 1200px) {
       width: 12px;
-      height: 16px; margin-right: 10px;
+      height: 16px;
+      margin-right: 10px;
     }
   }
   &__mail-icon {
     //   breakpoint  768px for tablet screen
     @media screen and (min-width: 768px) {
       width: 14px;
-      height: 10px; margin-right: 10px;
+      height: 10px;
+      margin-right: 10px;
     }
     @media screen and (min-width: 1200px) {
       width: 16px;
-      height: 10px; margin-right: 10px;
+      height: 10px;
+      margin-right: 10px;
     }
   }
   &__mail {
     //   breakpoint  768px for tablet screen
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 10px;
     }
+
     //   breakpoint  1200px for descktop screen
-  }
-}
-.menu-btn {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-
-  position: fixed;
-  top: 10px;
-  right: 15px;
-
-  //   breakpoint  768px for tablet screen
-  @media screen and (min-width: 768px) {
-    display: none;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -18,9 +18,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- Personal styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -46,7 +43,12 @@
           </ul>
         </nav>
 
-        <button class="menu-btn" type="button">
+        <button
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="menu-conteiner"
+          type="button"
+        >
           <svg width="40" height="40" class="header__btn-icon">
             <use href="./images/icons.svg#menu-btn"></use>
           </svg>
@@ -79,6 +81,56 @@
     <!-- Main -->
 
     <main>
+      <!-- Mobile menu -->
+
+      <div class="menu-overlay">
+        <div class="menu-conteiner js-menu-container" id="menu-conteiner">
+          <button class="menu-btn js-close-menu" type="button">
+            <svg class="menu-btn__close" width="40" height="40">
+              <use class="menu-btn__icon" href="./images/icons.svg#mobile_close"></use>
+            </svg>
+          </button>
+
+          <ul class="menu list">
+            <li class="menu-studio">
+              <a class="link menu__link menu__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__portfolio">
+              <a class="link menu__link menu__link--portfolio" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__contacts">
+              <a class="link menu__link menu__link--contacts" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="list menu__list">
+            <li class="header__phone menu__phone--link">
+              <a class="link menu__phone" href="tel:+380961111111"> +38 099 111 11 11 </a>
+            </li>
+            <li class="header__mail menu__mail--link">
+              <a class="link menu__mail" lang="en" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list social-mobile">
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Instagram</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Twitter</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Facebook</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- Hero -->
 
       <section class="main">
@@ -515,5 +567,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
