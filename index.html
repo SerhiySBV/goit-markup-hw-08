@@ -252,15 +252,54 @@
           <h2 class="specification-title">Чим ми займаємося</h2>
           <ul class="list specification-list">
             <li class="img specification-img">
-              <img src="./images/pic1.jpg" alt="Фото1" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\about\img-1@1x_lg.jpg 1x, ./images\about\img-1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\about\img-1@1x_lg.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="specification-text">Десктопні додатки</p>
             </li>
             <li class="img specification-img">
-              <img src="./images/pic2.jpg" alt="Фото2" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\about\img-2@1x_lg.jpg 1x, ./images\about\img-2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\about\img-2@1x_lg.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="specification-text">Мобільні додатки</p>
             </li>
             <li class="img specification-img">
-              <img src="./images/pic3.jpg" alt="Фото3" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\about\img-3@1x_lg.jpg 1x, ./images\about\img-3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\about\img-3@1x_lg.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="specification-text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -274,13 +313,34 @@
           <h2 class="teem-title">Наша команда</h2>
           <ul class="list teem-list">
             <li class="teem-link">
-              <img
-                class="teem-img"
-                src="./images/product_designer.jpg"
-                alt="Продукт дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\teem\img-1@1x_lg.jpg 1x, ./images\teem\img-1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images\teem\img-1@1x_md.jpg 1x, ./images\teem\img-1@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images\teem\img-1@1x_sm.jpg 1x, ./images\teem\img-1@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="teem-img"
+                  srcset=""
+                  src="./images\teem\img-1@1x_sm.jpg"
+                  alt="Продукт дизайнер"
+                  max-width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="social">
                 <h3 lang="ru" class="social-title">Игорь Демьяненко</h3>
                 <p lang="en" class="social-text">Product Designe</p>
@@ -317,13 +377,34 @@
               </div>
             </li>
             <li class="teem-link">
-              <img
-                class="teem-img"
-                src="./images/frontend_developer.jpg"
-                alt="Фронтент разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\teem\img-2@1x_lg.jpg 1x, ./images\teem\img-2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images\teem\img-2@1x_md.jpg 1x, ./images\teem\img-2@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images\teem\img-2@1x_sm.jpg 1x, ./images\teem\img-2@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="teem-img"
+                  srcset="./images\teem\img-2@1x_sm.jpg 1x, ./images\teem\img-2@2x_sm.jpg 2x"
+                  src="./images\teem\img-2@1x_sm.jpg"
+                  alt="Фронтенд розробник"
+                  max-width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="social">
                 <h3 lang="ru" class="social-title">Ольга Репина</h3>
                 <p lang="en" class="social-text">Frontend Develope</p>
@@ -360,13 +441,33 @@
               </div>
             </li>
             <li class="teem-link">
-              <img
-                class="teem-img"
-                src="./images/marketing.jpg"
-                alt="Маркетинг"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\teem\img-3@1x_lg.jpg 1x, ./images\teem\img-3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images\teem\img-3@1x_md.jpg 1x, ./images\teem\img-3@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images\teem\img-3@1x_sm.jpg 1x, ./images\teem\img-3@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="teem-img"
+                  src="./images\teem\img-3@1x_sm.jpg"
+                  alt="Маркетинг"
+                  max-width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="social">
                 <h3 lang="ru" class="social-title">Николай Тарасов</h3>
                 <p lang="en" class="social-text">Marketing</p>
@@ -403,13 +504,33 @@
               </div>
             </li>
             <li class="teem-link">
-              <img
-                class="teem-img"
-                src="./images/ui_designer.jpg"
-                alt="ЮИ дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\teem\img-4@1x_lg.jpg 1x, ./images\teem\img-4@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images\teem\img-4@1x_md.jpg 1x, ./images\teem\img-4@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images\teem\img-4@1x_sm.jpg 1x, ./images\teem\img-4@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="teem-img"
+                  src="./images\teem\img-4@1x_sm.jpg"
+                  alt="ЮИ дизайнер"
+                  max-width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="social">
                 <h3 lang="ru" class="social-title">Михаил Ермаков</h3>
                 <p lang="en" class="social-text">UI Designer</p>

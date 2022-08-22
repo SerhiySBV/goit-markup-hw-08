@@ -51,6 +51,12 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .btn {
@@ -569,6 +575,7 @@ img {
           justify-content: center;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
   top: 0;
   left: 0;
   -webkit-transform: translateY(100%);
@@ -1543,11 +1550,6 @@ img {
   border-left: 1px solid #eeeeee;
   background-color: #fff;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .description {
-    padding-bottom: 56px;
-  }
-}
 .description-title {
   font-weight: 700;
   font-size: 18px;
@@ -1590,17 +1592,17 @@ img {
 }
 .portfolio-item {
   display: list-item;
-  width: 450px;
+  max-width: 450px;
   border: 1px rgb(238, 238, 238);
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-item {
-    width: 370px;
+    max-width: 370px;
   }
 }
 
