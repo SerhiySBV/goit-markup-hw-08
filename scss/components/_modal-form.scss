@@ -16,12 +16,8 @@
   transition: transform $animation;
   transform: translate(-50%, -50%) scale(1);
   z-index: 1003;
-
-  //   breakpoint  768px for tablet screen
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    height: 609px;
-  }
+  width: 450px;
+  height: 609px;
 
   //   breakpoint  1200px for descktop screen
   @media screen and (min-width: 1200px) {

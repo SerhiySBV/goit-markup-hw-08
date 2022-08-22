@@ -4,21 +4,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Hero.jpg);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: none;
 
   //   breakpoint  768px for tablet screen
   @media screen and (min-width: 768px) {
     display: block;
     height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    max-width: 768px;
   }
 
   //   breakpoint  1200px for descktop screen
@@ -27,6 +29,7 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 
   &__text {
@@ -34,6 +37,8 @@
     margin-bottom: 30px;
 
     font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62em;
 
     text-align: center;
     letter-spacing: 0.06em;

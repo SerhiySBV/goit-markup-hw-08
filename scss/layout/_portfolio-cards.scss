@@ -7,6 +7,10 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   background-color: #fff;
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    padding-bottom: 56px;
+  }
 
   &-title {
     font-weight: 700;
@@ -28,7 +32,11 @@
 
 /* Boxes specification */
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &-list {
     display: flex;
@@ -41,9 +49,19 @@
   }
   &-item {
     display: list-item;
-    max-width: 370px;
+    width: 450px;
 
     border: 1px rgba(238, 238, 238, 1);
+
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
 }
 /* Sadow */

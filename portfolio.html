@@ -35,15 +35,21 @@
         >
         <nav class="nav">
           <ul class="list nav__list">
-            <li><a class="link nav__link" href="./index.html">Студія</a></li>
             <li class="nav-curent">
-              <a class="link nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+              <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
             </li>
+            <li><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
 
-        <button class="menu-btn" type="button">
+        <button
+          class="menu-btn"
+          data-menu-open
+          aria-expanded="false"
+          aria-controls="menu-conteiner"
+          type="button"
+        >
           <svg width="40" height="40" class="header__btn-icon">
             <use href="./images/icons.svg#menu-btn"></use>
           </svg>
@@ -76,18 +82,68 @@
     <!-- Main portfolio -->
 
     <main class="portfolio-main">
+      <!-- Mobile menu -->
+
+      <div class="menu-overlay" data-menu>
+        <div class="menu-conteiner">
+          <button class="menu-btn" type="button" data-menu-close>
+            <svg class="menu-btn__close" width="40" height="40">
+              <use class="menu-btn__icon" href="./images/icons.svg#mobile_close"></use>
+            </svg>
+          </button>
+
+          <ul class="menu list">
+            <li class="menu-studio">
+              <a class="link menu__link menu__link--contacts" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__portfolio">
+              <a class="link menu__link menu__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__contacts">
+              <a class="link menu__link menu__link--contacts" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="list menu__list">
+            <li class="header__phone menu__phone--link">
+              <a class="link menu__phone" href="tel:+380961111111"> +38 099 111 11 11 </a>
+            </li>
+            <li class="header__mail menu__mail--link">
+              <a class="link menu__mail" lang="en" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list social-mobile">
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Instagram</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Twitter</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">Facebook</a>
+            </li>
+            <li class="social-mobile-item">
+              <a href="" class="social-mobile-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <section class="portfolio">
         <div class="conteiner">
           <h1 class="visually-hidden">Портфоліо</h1>
           <!-- Buttons -->
           <ul class="list portfolio-btn">
             <li>
-              <button class="btn portfolio-btn-current" type="button">Все</button>
+              <button class="btn-portfolio portfolio-btn-current" type="button">Все</button>
             </li>
-            <li><button class="btn" type="button">Веб-сайти</button></li>
-            <li><button class="btn" type="button">Додатки</button></li>
-            <li><button class="btn" type="button">Дизайн</button></li>
-            <li><button class="btn" type="button">Маркетинг</button></li>
+            <li><button class="btn-portfolio" type="button">Веб-сайти</button></li>
+            <li><button class="btn-portfolio" type="button">Додатки</button></li>
+            <li><button class="btn-portfolio" type="button">Дизайн</button></li>
+            <li><button class="btn-portfolio" type="button">Маркетинг</button></li>
           </ul>
           <ul class="portfolio-list">
             <li class="link portfolio-item">
@@ -350,5 +406,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
