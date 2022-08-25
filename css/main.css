@@ -180,7 +180,6 @@ img {
   z-index: 1003;
   width: 100%;
   max-width: 450px;
-  max-height: 609px;
   pointer-events: initial;
   overflow: auto;
 }
