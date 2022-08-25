@@ -711,10 +711,15 @@ img {
 
 .menu__phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 480px) {
+  .menu__phone {
+    font-size: 34px;
+  }
 }
 .menu__phone--link {
   margin-bottom: 32px;
@@ -743,10 +748,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22em;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 480px) {
+  .social-mobile-item {
+    font-size: 18px;
+  }
 }
 .social-mobile-item:not(:last-child)::after {
   content: " ";

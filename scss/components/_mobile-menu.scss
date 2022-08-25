@@ -99,11 +99,16 @@
 
 .menu__phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
 
   color: var(--accent-txt-cl);
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+
   &--link {
     margin-bottom: 32px;
   }
@@ -125,11 +130,15 @@
   &-item {
     display: flex;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22em;
     letter-spacing: 0.02em;
 
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   &-item:not(:last-child)::after {
