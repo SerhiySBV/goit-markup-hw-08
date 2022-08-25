@@ -1,9 +1,9 @@
 .portfolio-btn {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   max-width: 326px;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 40px;
   &-current {
     background-color: #2196f3;
@@ -13,12 +13,12 @@
   //   breakpoint  768px for tablet screen
   @media screen and (min-width: 768px) {
     max-width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 
   //   breakpoint  1200px for descktop screen
   @media screen and (min-width: 1200px) {
     max-width: 100%;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }

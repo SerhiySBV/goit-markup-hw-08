@@ -84,7 +84,7 @@
       <!-- Mobile menu -->
 
       <div class="menu-overlay" data-menu>
-        <div class="menu-conteiner">
+        <div class="menu-conteiner" id="menu-conteiner">
           <button class="menu-btn" type="button" data-menu-close>
             <svg class="menu-btn__close" width="40" height="40">
               <use class="menu-btn__icon" href="./images/icons.svg#mobile_close"></use>
@@ -255,11 +255,11 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\about\img-1@1x_lg.jpg 1x, ./images\about\img-1@2x_lg.jpg 2x"
+                  srcset="./images/about/img-1@1x_lg.jpg 1x, ./images/about/img-1@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
                 <img
-                  src="./images\about\img-1@1x_lg.jpg"
+                  src="./images/about/img-1@1x_lg.jpg"
                   alt="Десктопні додатки"
                   width="370"
                   height="294"
@@ -272,11 +272,11 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\about\img-2@1x_lg.jpg 1x, ./images\about\img-2@2x_lg.jpg 2x"
+                  srcset="./images/about/img-2@1x_lg.jpg 1x, ./images/about/img-2@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
                 <img
-                  src="./images\about\img-2@1x_lg.jpg"
+                  src="./images/about/img-2@1x_lg.jpg"
                   alt="Мобільні додатки"
                   width="370"
                   height="294"
@@ -289,11 +289,11 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\about\img-3@1x_lg.jpg 1x, ./images\about\img-3@2x_lg.jpg 2x"
+                  srcset="./images/about/img-3@1x_lg.jpg 1x, ./images/about/img-3@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
                 <img
-                  src="./images\about\img-3@1x_lg.jpg"
+                  src="./images/about/img-3@1x_lg.jpg"
                   alt="Дизайнерські рішення"
                   width="370"
                   height="294"
@@ -306,9 +306,9 @@
         </div>
       </section>
 
-      <!--Teem-->
+      <!-- Teem -->
 
-      <section teem>
+      <section class="teem">
         <div class="conteiner">
           <h2 class="teem-title">Наша команда</h2>
           <ul class="list teem-list">
@@ -316,29 +316,22 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\teem\img-1@1x_lg.jpg 1x, ./images\teem\img-1@2x_lg.jpg 2x"
+                  srcset="./images/teem/img-1@1x_lg.jpg 1x, ./images/teem/img-1@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(min-width:768px)"
-                  srcset="./images\teem\img-1@1x_md.jpg 1x, ./images\teem\img-1@2x_md.jpg 2x"
+                  srcset="./images/teem/img-1@1x_md.jpg 1x, ./images/teem/img-1@2x_md.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(max-width:767px)"
-                  srcset="./images\teem\img-1@1x_sm.jpg 1x, ./images\teem\img-1@2x_sm.jpg 2x"
+                  srcset="../. img-1@1x_sm.jpg 1x, ./images/teem/img-1@2x_sm.jpg 2x"
                   type="image/jpg"
                 />
-                <img
-                  class="teem-img"
-                  srcset=""
-                  src="./images\teem\img-1@1x_sm.jpg"
-                  alt="Продукт дизайнер"
-                  max-width="450"
-                  height="460"
-                />
+                <img class="teem-img" src="./images/teem/img-1@1x_sm.jpg" alt="Продукт дизайнер" />
               </picture>
 
               <div class="social">
@@ -380,28 +373,26 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\teem\img-2@1x_lg.jpg 1x, ./images\teem\img-2@2x_lg.jpg 2x"
+                  srcset="./images/teem/img-2@1x_lg.jpg 1x, ./images/teem/img-2@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(min-width:768px)"
-                  srcset="./images\teem\img-2@1x_md.jpg 1x, ./images\teem\img-2@2x_md.jpg 2x"
+                  srcset="./images/teem/img-2@1x_md.jpg 1x, ./images/teem/img-2@2x_md.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(max-width:767px)"
-                  srcset="./images\teem\img-2@1x_sm.jpg 1x, ./images\teem\img-2@2x_sm.jpg 2x"
+                  srcset="./images/teem/img-2@1x_sm.jpg 1x, ./images/teem/img-2@2x_sm.jpg 2x"
                   type="image/jpg"
                 />
                 <img
                   class="teem-img"
-                  srcset="./images\teem\img-2@1x_sm.jpg 1x, ./images\teem\img-2@2x_sm.jpg 2x"
-                  src="./images\teem\img-2@1x_sm.jpg"
+                  srcset="./images/teem/img-2@1x_sm.jpg 1x, ./images/teem/img-2@2x_sm.jpg 2x"
+                  src="./images/teem/img-2@1x_sm.jpg"
                   alt="Фронтенд розробник"
-                  max-width="450"
-                  height="460"
                 />
               </picture>
 
@@ -444,28 +435,22 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\teem\img-3@1x_lg.jpg 1x, ./images\teem\img-3@2x_lg.jpg 2x"
+                  srcset="./images/teem/img-3@1x_lg.jpg 1x, ./images/teem/img-3@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(min-width:768px)"
-                  srcset="./images\teem\img-3@1x_md.jpg 1x, ./images\teem\img-3@2x_md.jpg 2x"
+                  srcset="./images/teem/img-3@1x_md.jpg 1x, ./images/teem/img-3@2x_md.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(max-width:767px)"
-                  srcset="./images\teem\img-3@1x_sm.jpg 1x, ./images\teem\img-3@2x_sm.jpg 2x"
+                  srcset="./images/teem/img-3@1x_sm.jpg 1x, ./images/teem/img-3@2x_sm.jpg 2x"
                   type="image/jpg"
                 />
-                <img
-                  class="teem-img"
-                  src="./images\teem\img-3@1x_sm.jpg"
-                  alt="Маркетинг"
-                  max-width="450"
-                  height="460"
-                />
+                <img class="teem-img" src="./images/teem/img-3@1x_sm.jpg" alt="Маркетинг" />
               </picture>
 
               <div class="social">
@@ -507,28 +492,22 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\teem\img-4@1x_lg.jpg 1x, ./images\teem\img-4@2x_lg.jpg 2x"
+                  srcset="./images/teem/img-4@1x_lg.jpg 1x, ./images/teem/img-4@2x_lg.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(min-width:768px)"
-                  srcset="./images\teem\img-4@1x_md.jpg 1x, ./images\teem\img-4@2x_md.jpg 2x"
+                  srcset="./images/teem/img-4@1x_md.jpg 1x, ./images/teem/img-4@2x_md.jpg 2x"
                   type="image/jpg"
                 />
 
                 <source
                   media="(max-width:767px)"
-                  srcset="./images\teem\img-4@1x_sm.jpg 1x, ./images\teem\img-4@2x_sm.jpg 2x"
+                  srcset="./images/teem/img-4@1x_sm.jpg 1x, ./images/teem/img-4@2x_sm.jpg 2x"
                   type="image/jpg"
                 />
-                <img
-                  class="teem-img"
-                  src="./images\teem\img-4@1x_sm.jpg"
-                  alt="ЮИ дизайнер"
-                  max-width="450"
-                  height="460"
-                />
+                <img class="teem-img" src="./images/teem/img-4@1x_sm.jpg" alt="ЮИ дизайнер" />
               </picture>
 
               <div class="social">

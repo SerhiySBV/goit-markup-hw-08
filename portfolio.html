@@ -36,9 +36,11 @@
         <nav class="nav">
           <ul class="list nav__list">
             <li class="nav-curent">
-              <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
+              <a class="link nav__link nav__link" href="./index.html">Студія</a>
             </li>
-            <li><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li>
+              <a class="link nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li><a class="link nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
@@ -85,7 +87,7 @@
       <!-- Mobile menu -->
 
       <div class="menu-overlay" data-menu>
-        <div class="menu-conteiner">
+        <div class="menu-conteiner" id="menu-conteiner">
           <button class="menu-btn" type="button" data-menu-close>
             <svg class="menu-btn__close" width="40" height="40">
               <use class="menu-btn__icon" href="./images/icons.svg#mobile_close"></use>
@@ -152,8 +154,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-1@1x_lg.jpg 1x,
-                      ./images\portfolio\img-1@2x_lg.jpg 2x
+                      ./images/portfolio/img-1@1x_lg.jpg 1x,
+                      ./images/portfolio/img-1@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -161,8 +163,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-1@1x_md.jpg 1x,
-                      ./images\portfolio\img-1@2x_md.jpg 2x
+                      ./images/portfolio/img-1@1x_md.jpg 1x,
+                      ./images/portfolio/img-1@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -170,14 +172,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-1@1x_sm.jpg 1x,
-                      ./images\portfolio\img-1@2x_sm.jpg 2x
+                      ./images/portfolio/img-1@1x_sm.jpg 1x,
+                      ./images/portfolio/img-1@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-1@1x_sm.jpg"
+                    src="./images/portfolio/img-1@1x_sm.jpg"
                     alt="веб-сайт технокряк"
                     width="450"
                     height="294"
@@ -203,8 +205,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-2@1x_lg.jpg 1x,
-                      ./images\portfolio\img-2@2x_lg.jpg 2x
+                      ./images/portfolio/img-2@1x_lg.jpg 1x,
+                      ./images/portfolio/img-2@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -212,8 +214,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-2@1x_md.jpg 1x,
-                      ./images\portfolio\img-2@2x_md.jpg 2x
+                      ./images/portfolio/img-2@1x_md.jpg 1x,
+                      ./images/portfolio/img-2@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -221,14 +223,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-2@1x_sm.jpg 1x,
-                      ./images\portfolio\img-2@2x_sm.jpg 2x
+                      ./images/portfolio/img-2@1x_sm.jpg 1x,
+                      ./images/portfolio/img-2@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-2@1x_sm.jpg"
+                    src="./images/portfolio/img-2@1x_sm.jpg"
                     alt="Постер"
                     width="450"
                     height="294"
@@ -254,8 +256,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-3@1x_lg.jpg 1x,
-                      ./images\portfolio\img-3@2x_lg.jpg 2x
+                      ./images/portfolio/img-3@1x_lg.jpg 1x,
+                      ./images/portfolio/img-3@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -263,8 +265,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-3@1x_md.jpg 1x,
-                      ./images\portfolio\img-3@2x_md.jpg 2x
+                      ./images/portfolio/img-3@1x_md.jpg 1x,
+                      ./images/portfolio/img-3@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -272,14 +274,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-3@1x_sm.jpg 1x,
-                      ./images\portfolio\img-3@2x_sm.jpg 2x
+                      ./images/portfolio/img-3@1x_sm.jpg 1x,
+                      ./images/portfolio/img-3@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-3@1x_sm.jpg"
+                    src="./images/portfolio/img-3@1x_sm.jpg"
                     alt="Ресторан морської їжі"
                     width="450"
                     height="294"
@@ -305,8 +307,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-4@1x_lg.jpg 1x,
-                      ./images\portfolio\img-4@2x_lg.jpg 2x
+                      ./images/portfolio/img-4@1x_lg.jpg 1x,
+                      ./images/portfolio/img-4@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -314,8 +316,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-4@1x_md.jpg 1x,
-                      ./images\portfolio\img-4@2x_md.jpg 2x
+                      ./images/portfolio/img-4@1x_md.jpg 1x,
+                      ./images/portfolio/img-4@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -323,14 +325,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-4@1x_sm.jpg 1x,
-                      ./images\portfolio\img-4@2x_sm.jpg 2x
+                      ./images/portfolio/img-4@1x_sm.jpg 1x,
+                      ./images/portfolio/img-4@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-4@1x_sm.jpg"
+                    src="./images/portfolio/img-4@1x_sm.jpg"
                     alt="Проект прайм"
                     width="450"
                     height="294"
@@ -356,8 +358,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-5@1x_lg.jpg 1x,
-                      ./images\portfolio\img-5@2x_lg.jpg 2x
+                      ./images/portfolio/img-5@1x_lg.jpg 1x,
+                      ./images/portfolio/img-5@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -365,8 +367,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-5@1x_md.jpg 1x,
-                      ./images\portfolio\img-5@2x_md.jpg 2x
+                      ./images/portfolio/img-5@1x_md.jpg 1x,
+                      ./images/portfolio/img-5@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -374,14 +376,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-5@1x_sm.jpg 1x,
-                      ./images\portfolio\img-5@2x_sm.jpg 2x
+                      ./images/portfolio/img-5@1x_sm.jpg 1x,
+                      ./images/portfolio/img-5@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-5@1x_sm.jpg"
+                    src="./images/portfolio/img-5@1x_sm.jpg"
                     alt="Проект Коробки"
                     width="450"
                     height="294"
@@ -407,8 +409,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-6@1x_lg.jpg 1x,
-                      ./images\portfolio\img-6@2x_lg.jpg 2x
+                      ./images/portfolio/img-6@1x_lg.jpg 1x,
+                      ./images/portfolio/img-6@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -416,8 +418,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-6@1x_md.jpg 1x,
-                      ./images\portfolio\img-6@2x_md.jpg 2x
+                      ./images/portfolio/img-6@1x_md.jpg 1x,
+                      ./images/portfolio/img-6@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -425,14 +427,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-6@1x_sm.jpg 1x,
-                      ./images\portfolio\img-6@2x_sm.jpg 2x
+                      ./images/portfolio/img-6@1x_sm.jpg 1x,
+                      ./images/portfolio/img-6@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-6@1x_sm.jpg"
+                    src="./images/portfolio/img-6@1x_sm.jpg"
                     alt="Inspiration has no Borders"
                     width="450"
                     height="294"
@@ -458,8 +460,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-7@1x_lg.jpg 1x,
-                      ./images\portfolio\img-7@2x_lg.jpg 2x
+                      ./images/portfolio/img-7@1x_lg.jpg 1x,
+                      ./images/portfolio/img-7@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -467,8 +469,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-7@1x_md.jpg 1x,
-                      ./images\portfolio\img-7@2x_md.jpg 2x
+                      ./images/portfolio/img-7@1x_md.jpg 1x,
+                      ./images/portfolio/img-7@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -476,14 +478,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-7@1x_sm.jpg 1x,
-                      ./images\portfolio\img-7@2x_sm.jpg 2x
+                      ./images/portfolio/img-7@1x_sm.jpg 1x,
+                      ./images/portfolio/img-7@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-7@1x_sm.jpg"
+                    src="./images/portfolio/img-7@1x_sm.jpg"
                     alt="Видання"
                     width="450"
                     height="294"
@@ -510,8 +512,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-8@1x_lg.jpg 1x,
-                      ./images\portfolio\img-8@2x_lg.jpg 2x
+                      ./images/portfolio/img-8@1x_lg.jpg 1x,
+                      ./images/portfolio/img-8@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -519,8 +521,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-8@1x_md.jpg 1x,
-                      ./images\portfolio\img-8@2x_md.jpg 2x
+                      ./images/portfolio/img-8@1x_md.jpg 1x,
+                      ./images/portfolio/img-8@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -528,14 +530,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-8@1x_sm.jpg 1x,
-                      ./images\portfolio\img-8@2x_sm.jpg 2x
+                      ./images/portfolio/img-8@1x_sm.jpg 1x,
+                      ./images/portfolio/img-8@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-8@1x_sm.jpg"
+                    src="./images/portfolio/img-8@1x_sm.jpg"
                     alt="Проект ЛАБ"
                     width="450"
                     height="294"
@@ -561,8 +563,8 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images\portfolio\img-9@1x_lg.jpg 1x,
-                      ./images\portfolio\img-9@2x_lg.jpg 2x
+                      ./images/portfolio/img-9@1x_lg.jpg 1x,
+                      ./images/portfolio/img-9@2x_lg.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -570,8 +572,8 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      ./images\portfolio\img-9@1x_md.jpg 1x,
-                      ./images\portfolio\img-9@2x_md.jpg 2x
+                      ./images/portfolio/img-9@1x_md.jpg 1x,
+                      ./images/portfolio/img-9@2x_md.jpg 2x
                     "
                     type="image/jpg"
                   />
@@ -579,14 +581,14 @@
                   <source
                     media="(max-width:767px)"
                     srcset="
-                      ./images\portfolio\img-9@1x_sm.jpg 1x,
-                      ./images\portfolio\img-9@2x_sm.jpg 2x
+                      ./images/portfolio/img-9@1x_sm.jpg 1x,
+                      ./images/portfolio/img-9@2x_sm.jpg 2x
                     "
                     type="image/jpg"
                   />
                   <img
                     class="portfolio-img"
-                    src="./images\portfolio\img-9@1x_sm.jpg"
+                    src="./images/portfolio/img-9@1x_sm.jpg"
                     alt="Growing Business"
                     width="450"
                     height="294"
