@@ -178,15 +178,13 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   z-index: 1003;
-  width: 100%;
-  max-width: 450px;
   pointer-events: initial;
   overflow: auto;
+  width: calc(100vw - 30px);
 }
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
     top: 50%;
     left: 50%;
   }
@@ -287,7 +285,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 40px;
   margin-bottom: 12px;
 }
 .form__text {
@@ -975,7 +972,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -1235,8 +1231,6 @@ img {
 }
 .teem-img {
   text-align: center;
-  max-width: 450px;
-  max-width: 460px;
 }
 
 /* Block decoration */
